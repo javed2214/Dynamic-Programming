@@ -1,4 +1,4 @@
-// Program to find Max Sum such that No Three Elements are Consective
+// Program to find Max Sum such that No Three Elements are Consecutive
 
 #include<bits/stdc++.h>
 using namespace std;
