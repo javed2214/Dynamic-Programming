@@ -1,4 +1,4 @@
-// Minimum Steps To One Problem. Can Perform only Following Operations
+// "Minimum Steps To One" Problem. Can Perform only Following Operations
 // If n is divisible by 2 then we may reduce n to n/2.
 // If n is divisible by 3 then you may reduce n to n/3.
 // Decrement n by 1.
