@@ -10,9 +10,9 @@ int main(){
 
 	int sum[n];
 
-	sum[0]=a[0];
-	sum[1]=a[0]+a[1];
-	sum[2]=max(a[0]+a[1], max(a[1]+a[2], a[0]+a[2]));
+	if(n>=0) sum[0]=a[0];
+	if(n>=1) sum[1]=a[0]+a[1];
+	if(n>=2) sum[2]=max(a[0]+a[1], max(a[1]+a[2], a[0]+a[2]));
 
 	// sum[i-1] -> Excluding a[i]
 	// sum[i-2]+a[i] -> Excluding a[i-1]
