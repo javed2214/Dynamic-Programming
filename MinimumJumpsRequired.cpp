@@ -16,9 +16,11 @@ int main(){
 	int n=sizeof(a)/sizeof(int);
 
 	int minJump[n];
-	minJump[0]=0;
-	for(int i=1;i<n;i++)
+	
+	for(int i=0;i<n;i++)
 		minJump[i]=INT_MAX;
+	
+	minJump[0]=0;
 
 	for(int i=1;i<n;i++){
 		for(int j=0;j<i;j++){
