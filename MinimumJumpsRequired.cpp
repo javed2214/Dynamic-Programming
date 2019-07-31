@@ -1,5 +1,7 @@
 // Minimum Jumps Required to Reach the End of an Array
 // https://leetcode.com/problems/jump-game-ii/
+// https://www.youtube.com/watch?v=jH_5ypQggWg
+
 
 #include<bits/stdc++.h>
 using namespace std;
