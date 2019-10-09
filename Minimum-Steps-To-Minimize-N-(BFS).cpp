@@ -1,4 +1,7 @@
 // Minimum Steps to inimize N Using BFS
+// Alternate Solution Using BFS
+// Orignal Question : https://github.com/javed2214/Dynamic-Programming/edit/master/Minimum-Steps-To-Minimize-N.cpp
+// https://www.geeksforgeeks.org/minimum-steps-minimize-n-per-given-condition/
 
 #include<bits/stdc++.h>
 using namespace std;
