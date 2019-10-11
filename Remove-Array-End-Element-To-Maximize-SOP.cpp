@@ -1,5 +1,5 @@
 // Remove Array End Element to Maximize the Sum of Product - (Dynamic Programming)
-// 
+// https://www.geeksforgeeks.org/remove-array-end-element-maximize-sum-product/
 
 #include<bits/stdc++.h>
 using namespace std;
