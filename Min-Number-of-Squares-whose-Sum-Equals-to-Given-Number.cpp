@@ -1,6 +1,10 @@
 // Minimum Number of Squares whose Sum Equals to Given Number 'n'
 // https://www.youtube.com/watch?v=96-qEnEuj5U
 
+// Example : n = 18  Output : 2 (9 + 9)
+// n = 100  Output : 1 (100)
+// n = 28  Output : 4 (9 + 9 + 9 + 1)
+
 #include<bits/stdc++.h>
 using namespace std;
 
