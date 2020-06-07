@@ -1,4 +1,5 @@
 // Minimum Steps to Minimize n to 1 as Per Given Condition
+// https://www.youtube.com/watch?v=GACU5omoOGY&list=PLpO3gASfJEIJRnNG4q6QoHAYAATo466a_
 // Alternate Solution (BFS)
 
 // Given a number n, count minimum steps to minimize it to 1 according to the following criteria:
