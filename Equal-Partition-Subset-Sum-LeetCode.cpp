@@ -4,6 +4,7 @@
 
 // https://leetcode.com/problems/partition-equal-subset-sum/
 
+// ============================== METHOD - 1 ==================================
 class Solution {
 public:
     
@@ -31,5 +32,36 @@ public:
         for(auto it: nums) sum += it;
         if(sum % 2 != 0) return false;
         return subsetSum(nums, sum / 2);
+    }
+};
+
+
+// ============================= METHOD - 2 ==================================
+
+// Time: O(n*sum)
+// Space: O(n)
+
+class Solution {
+public:
+    
+    bool canPartition(vector<int>& nums) {
+        
+        int sum = 0;
+        for(auto it: nums) sum += it;
+        if(sum % 2 != 0) return false;
+        
+        sum /= 2;
+        
+        bool dp[sum+1];
+        memset(dp, false, sizeof(dp));
+        dp[0] = true;
+        
+        for(auto it: nums){
+            for(int j = sum; j > 0; j--){
+                if(it <= j)
+                    dp[j] = dp[j] || dp[j-it];
+            }
+        }
+        return dp[sum];
     }
 };
