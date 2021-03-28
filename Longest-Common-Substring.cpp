@@ -1,39 +1,32 @@
 // Longest Common Substring
-// Using Dynamic Programming
-// Variant of Longest Common Subsequence
+// Variation of Longest Common Subsequence
 
 #include<bits/stdc++.h>
 using namespace std;
 
 int LCS(string s1, string s2){
 
-    int n = s1.length();
-    int m = s2.length();
+	int n1 = s1.size();
+	int n2 = s2.size();
 
-    int dp[n+1][m+1];
-    int res = 0;
+	int dp[n1+1][n2+1];
+	memset(dp, 0, sizeof(dp));
 
-    for(int i = 0; i <= n; i++) dp[i][0] = 0;
-    for(int i = 0; i <= m; i++) dp[0][i] = 0;
-
-    for(int i = 1; i <= n; i++){
-        for(int j = 1; j <= m; j++){
-            if(s1[i-1] == s2[j-1]){
-                dp[i][j] = 1 + dp[i-1][j-1];
-                res  = max(res, dp[i][j]);
-            }
-            else dp[i][j] = 0;
-        }
-    }
-    return res;
+	for(int i = 1; i <= n1; i++){
+		for(int j = 1; j <= n2; j++){
+			if(s1[i-1] == s2[j-1]) dp[i][j] = 1 + dp[i-1][j-1];
+			else dp[i][j] = 0;   // For Subsequence: dp[i][j] = max(dp[i-1][j], dp[i][j-1])
+		}
+	}
+	return dp[n1][n2];
 }
 
 int main(){
 
-    string s1 = "geeksx";
-    string s2 = "forgeeksz";
+	string s1, s2;
+	cin >> s1 >> s2;
 
-    cout << LCS(s1, s2);
+	cout << LCS(s1, s2);
 
-    return 0;
+	return 0;
 }
